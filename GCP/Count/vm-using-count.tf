@@ -7,7 +7,7 @@ resource "google_compute_instance" "countt-vm-tf" {
     name = "gce-vm-${count.index}"
     machine_type = "f1-micro"
     zone = "us-central1-a"
-    count = 3
+    count = 4
     boot_disk {
       initialize_params {
         image = "debian-cloud/debian-9"
