@@ -14,4 +14,4 @@ steps:
       terraform plan
       echo "**************** Terraform apply ****************"
       terraform apply -auto-approve
-      echo "**************** creating resources ****************"
+      echo "**************** creating resources ***************"
