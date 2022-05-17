@@ -1,0 +1,16 @@
+steps:
+- id: 'tf plan'
+  name: 'hashicorp/terraform:1.0.0'
+  entrypoint: 'sh'
+  args:
+  - '-c'
+  - |
+      echo "**************** Terraform init ****************"
+      terraform init
+      echo "**************** Terraform validate ****************"
+      terraform validate
+      echo "**************** Terraform plan ****************"
+      terraform plan
+      echo "**************** Terraform apply ****************"
+      terraform apply -auto-approve
+      echo "**************** creating resources ***************"
