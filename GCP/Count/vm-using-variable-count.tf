@@ -5,7 +5,7 @@ provider "google" {
 
 resource "google_compute_instance" "vm-variable-count-tf" {
     name = var.vm-names[count.index]
-    count = 3
+    count = 4
     machine_type = "f1-micro"
     zone = "us-central1-a"
     boot_disk {
