@@ -1,7 +1,7 @@
 resource "google_compute_instance" "first-vm-tf-gcs-backend" {
     name = "first-vm-tf-gcs-backend"
     machine_type = "f1-micro"
-    zone = "us-central1-a"
+    region = "us-central1"
     boot_disk {
       initialize_params {
         image = "debian-cloud/debian-9"
